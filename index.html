@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="content">
+        <div class="display">
+            <h6 id="calcul"></h6>
+            <h3 id="result">0</h3>
+        </div>
+        <div class="buttonContent">
+            <span class="fbtn">
+                <input type="button" title="Clear" value="C" class="operator" onclick="reset()" />
+                <input type="button" title="modulo- reminder" value="%" class="operator" onclick="addToList('%')" />
+                <input type="button" title="Clear Entry" value="CE" class="operator" onclick="del()" />
+                <input type="button" title="divide" value="/" class="operator" onclick="addToList('/')" />
+            </span>
+
+            <span class="fbtn">
+                <input type="button" value="7" class="num" onclick="addToList(7)" />
+                <input type="button" value="8" class="num" onclick="addToList(8)" />
+                <input type="button" value="9" class="num" onclick="addToList(9)" />
+                <input type="button" value="+" title="Plus" class="operator" onclick="addToList('+')" />
+            </span>
+
+            <span class="fbtn">
+                <input type="button" value="4" class="num" onclick="addToList(4)" />
+                <input type="button" value="5" class="num" onclick="addToList(5)" />
+                <input type="button" value="6" class="num" onclick="addToList(6)" />
+                <input type="button" value="-" title="Minus" class="operator" onclick="addToList('-')" />
+            </span>
+
+            <span class="fbtn">
+                <input type="button" value="1" class="num" onclick="addToList(1)" />
+                <input type="button" value="2" class="num" onclick="addToList(2)" />
+                <input type="button" value="3" class="num" onclick="addToList(3)" />
+                <input type="button" value="X" title="Multiply" class="operator" onclick="addToList('*')" />
+            </span>
+
+            <span class="fbtn">
+                <input type="button" value="." class="num" onclick="addToList('.')" />
+                <input type="button" value="0" class="num" onclick="addToList(0)" />
+                <input type="button" value="=" class="equal" onclick="calc()" />
+            </span>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
